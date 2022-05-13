@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Scheherazade New', serif;
+    overflow: hidden;
+    margin: 0px;
+    /* Old browsers */
+    background: rgb(216,224,222); 
+    /* FF3.6-15 */
+    background: -moz-linear-gradient(-45deg,  rgb(216,224,222) 0%, rgb(174,191,188) 22%, rgb(153,175,171) 33%, rgb(142,166,162) 50%, rgb(130,157,152) 67%, rgb(78,92,90) 82%, rgb(14,14,14) 100%);
+     /* Chrome10-25,Safari5.1-6 */
+    background: -webkit-linear-gradient(-45deg,  rgb(216,224,222) 0%,rgb(174,191,188) 22%,rgb(153,175,171) 33%,rgb(142,166,162) 50%,rgb(130,157,152) 67%,rgb(78,92,90) 82%,rgb(14,14,14) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: linear-gradient(135deg,  rgb(216,224,222) 0%,rgb(174,191,188) 22%,rgb(153,175,171) 33%,rgb(142,166,162) 50%,rgb(130,157,152) 67%,rgb(78,92,90) 82%,rgb(14,14,14) 100%); 
+    /* IE6-9 fallback on horizontal gradient */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8e0de', endColorstr='#0e0e0e',GradientType=1 ); 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    padding: 0px 20px;
+}
+
+.slide {
+    height: 80vh;
+    border-radius: 20px;
+    margin: 10px;
+    cursor: pointer;
+    color: #fff;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: all 600ms ease-in-out;
+}
+
+.slide h3 {
+    background: #000;
+    border-radius: 20px;
+    position: absolute;
+    font-size: 24px;
+    bottom: 20px;
+    left: 20px;
+    margin: 0px;
+    opacity: 0;
+}
+
+.slide.active {
+    flex: 10;
+}
+
+.slide.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.5s;   
+}

@@ -1,0 +1,42 @@
+body {
+    width: 1190px;
+    margin: 0px auto;
+    text-align: center;
+    background: black;
+    color: white;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.sl {
+    font-size: 24px;
+    color: yellow;
+}
+
+#slider {
+    width: 384px;
+    height: 128;
+    border: 2px solid yellow;
+    border-radius: 10px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+#polosa {
+    width: 768px;
+    background: linear-gradient(135deg, rgba(30,87,153,0) 0%,rgba(30,87,153,0.8) 15%,rgba(30,87,153,1) 19%,rgba(30,87,153,1) 20%,rgba(41,137,216,1) 50%,rgba(30,87,153,1) 80%,rgba(30,87,153,1) 81%,rgba(30,87,153,0.8) 85%,rgba(30,87,153,0) 100%);
+    border-radius: 6px;
+    position: relative;
+    left: 0;
+    transition: all ease-out 2s;
+}
+#polisa img {
+    float: left;
+}
+
+#polosa::after {
+    content: "";
+    display: block;
+    clear: both;
+}
